@@ -110,7 +110,7 @@ def extrai_csv(caminho_zip):
             with zip.open(arquivo_csv) as csv:
                 return pd.read_csv(csv, encoding='latin1', on_bad_lines='skip')
         else:
-            print("Não econtrado arquivo cvs no zip.")
+            print("Não foi encontrado arquivo cvs no zip.")
 
 
 # Função para ETL do arquivo.
